@@ -1,0 +1,377 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "build-bot-2018",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "GetKindOfVehicles"
+    },
+    {
+      "name": "GetPriceEstimate"
+    },
+    {
+      "name": "Greetings"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "ScheduleRide"
+    }
+  ],
+  "entities": [
+    {
+      "name": "CarType"
+    },
+    {
+      "name": "location"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [
+    "datetimeV2"
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "897 pancake house on tuesday 1 : 00 pm please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "add an event to visit 209 nashville gym",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "add to my calender daddy daughter dance at meadowbrook",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "add to tuesday ' s calender visting milos bar tequila",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "affordable insurance washington ave albany ny 12222 please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "bayonne yellow cab please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "bbq near olympia wa please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "bend oregon exotic restaurants please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "book a ride in a sedan",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 17,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "book a ride in a suv",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "boudoir photo shoot ballard",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "calendar i ' ll be at the garage from 8 till 3 this saturday",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can i take my dog with me?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "check for seattle i - 5 accident",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you offer discounts for group rides?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "dog friendly hotel shasta california",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "dsw shoes 7804 on monday 3 : 00 pm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "dunmore pa sonic sounds friday morning please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "find redmond ridge golf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "get price estimation for a ride to redmond, washington",
+      "intent": "GetPriceEstimate",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 35,
+          "endPos": 53
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "holomap stockholm metro (3d map) please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how can i cancel a ride?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how much would it cost a ride to central park",
+      "intent": "GetPriceEstimate",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 33,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "how much would it cost a ride to foursquare",
+      "intent": "GetPriceEstimate",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 33,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "how much would it cost a ride to los angeles airport",
+      "intent": "GetPriceEstimate",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 33,
+          "endPos": 51
+        }
+      ]
+    },
+    {
+      "text": "how much would it cost a ride to seattle center",
+      "intent": "GetPriceEstimate",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 33,
+          "endPos": 46
+        }
+      ]
+    },
+    {
+      "text": "how much would it cost a ride to the golden gate",
+      "intent": "GetPriceEstimate",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 33,
+          "endPos": 47
+        }
+      ]
+    },
+    {
+      "text": "i need a car for may 5th",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "i need a ride",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "i need a ride for tomorrow 7am",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "i need a ride on monday at 10am",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "i need it for tomorrow at 7 am",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "i need the car for april 10th",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "make dinner plans at restaurant at 8pm .",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "meet kiel at hallmark cards 405 saturday 2 : 00 pm",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "ojai apple picking",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "public transportation to the hospital ?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "purple cafe kirkland reservations",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "santa barbara maine postal please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "schedula a ride in a sedan car",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 21,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "schedule a ride in a sports car",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 21,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "schedule a ride in a suv",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 21,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "search dearham swimming pool timetable",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "set an event on edwardsville pa gym today",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show me the opening hours of smokey park",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "soda popinski sf",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "tacoma please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "tesco ' s catterick garrison address please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "uani street",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "visit 209 nashville gym tomorrow morning",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what is the bus schedule today in dawsonville",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "what kind of vehicles do you have?",
+      "intent": "GetKindOfVehicles",
+      "entities": []
+    }
+  ]
+}

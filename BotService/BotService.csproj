@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>BotService</AssemblyName>
+    <RootNamespace>Build.Labs.BotFramework</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.Bot.Builder" Version="4.0.0-alpham4.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Ai.LUIS" Version="4.0.0-alpham4.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Ai.QnA" Version="4.0.0-alpham4.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Azure" Version="4.0.0-alpham4.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Core" Version="4.0.0-alpham4.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Core.Extensions" Version="4.0.0-alpham4.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.0.0-alpham4.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.0.0-alpham4.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Prompts" Version="4.0.0-alpham4.2" />
+  </ItemGroup>
+
+</Project>

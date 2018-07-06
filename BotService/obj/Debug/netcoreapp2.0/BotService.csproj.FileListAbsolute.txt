@@ -1,0 +1,11 @@
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\bin\Debug\netcoreapp2.0\BotService.deps.json
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\bin\Debug\netcoreapp2.0\BotService.runtimeconfig.json
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\bin\Debug\netcoreapp2.0\BotService.runtimeconfig.dev.json
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\bin\Debug\netcoreapp2.0\BotService.dll
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\bin\Debug\netcoreapp2.0\BotService.pdb
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\obj\Debug\netcoreapp2.0\BotService.csprojAssemblyReference.cache
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\obj\Debug\netcoreapp2.0\BotService.csproj.CoreCompileInputs.cache
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\obj\Debug\netcoreapp2.0\BotService.AssemblyInfoInputs.cache
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\obj\Debug\netcoreapp2.0\BotService.AssemblyInfo.cs
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\obj\Debug\netcoreapp2.0\BotService.dll
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService\obj\Debug\netcoreapp2.0\BotService.pdb

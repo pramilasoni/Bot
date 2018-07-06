@@ -1,0 +1,5 @@
+C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=BotService
+--content-root=C:\Projects\Bot\botframeworklab\ready-labs-botframework\BotService
+--file=

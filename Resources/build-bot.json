@@ -1,0 +1,158 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "build-bot-2018",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "GetKindOfVehicles"
+    },
+    {
+      "name": "Greetings"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "ScheduleRide"
+    }
+  ],
+  "entities": [
+    {
+      "name": "CarType",
+      "roles": []
+    },
+    {
+      "name": "location",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "book a ride in a sedan",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 17,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "book a ride in a suv",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 17,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "hello",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greetings",
+      "entities": []
+    },
+    {
+      "text": "how can i cancel a ride?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need a cab to the airport",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 16,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "i need a ride",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "i need a ride on monday at 10am",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "i need it for tomorrow at 7 am",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "i need the car for april 10th",
+      "intent": "ScheduleRide",
+      "entities": []
+    },
+    {
+      "text": "schedule a ride in a sedan car",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 21,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "schedule a ride in a sports car",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 21,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "schedule a ride in a suv",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "CarType",
+          "startPos": 21,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "schedule a ride to the airport",
+      "intent": "ScheduleRide",
+      "entities": [
+        {
+          "entity": "location",
+          "startPos": 19,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "what kind of vehicles do you have?",
+      "intent": "GetKindOfVehicles",
+      "entities": []
+    }
+  ]
+}
