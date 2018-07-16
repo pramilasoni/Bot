@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using Build.Labs.BotFramework.Api;
 using Build.Labs.BotFramework.Models;
 using Build.Labs.BotFramework.Services;
 using Microsoft.Bot;
@@ -35,7 +36,7 @@ namespace Build.Labs.BotFramework.Bots
         public CarsBot()
         {
             dialogs = new DialogSet();
-           // dialogs.Add(PromptStep.CarTypePrompt, new TextPrompt());
+            // dialogs.Add(PromptStep.CarTypePrompt, new TextPrompt());
             dialogs.Add(PromptStep.CarTypePrompt, new ChoicePrompt(Culture.English));
 
             dialogs.Add(PromptStep.TimePrompt, new TextPrompt());
@@ -78,7 +79,10 @@ namespace Build.Labs.BotFramework.Bots
                                 var time = GetTimeValueFromResult(result);
                                 ScheduleRideHandler(turnContext, carType, location, time);
                                 break;
-
+                            case LuisIntents.AddCart:
+                                var Cart = (string)result.Entities?.First;
+                                AddCart(turnContext);
+                                break;
                             default:
                                 await turnContext.SendActivity("Sorry, I didn't understand that.");
                                 break;
@@ -100,7 +104,13 @@ namespace Build.Labs.BotFramework.Bots
                     break;
             }
         }
+        private async void AddCart(ITurnContext context)
+        {
+            MyWebRequest myRequest = new MyWebRequest("https://localhost:5050/connect/token", "POST", "a=value1&b=value2");
 
+            await context.SendActivity("Your Cart has been added");
+
+        }
         private async Task CarTypeStep(DialogContext dialogContext, object result, SkipStepFunction next)
         {
             var state = dialogContext.Context.GetConversationState<ReservationData>();
@@ -119,8 +129,8 @@ namespace Build.Labs.BotFramework.Bots
                 var choices = actions.Select(x => new Choice { Action = x, Value = (string)x.Value }).ToList();
                 await dialogContext.Prompt(PromptStep.CarTypePrompt, activity, new ChoicePromptOptions { Choices = choices });
 
-            //    await dialogContext.Context.SendActivity("What kind of vehicle would you like?");
-            //    await dialogContext.Prompt(PromptStep.CarTypePrompt, $"Available options are: {string.Join(", ", BotConstants.CarTypes)}");
+                //    await dialogContext.Context.SendActivity("What kind of vehicle would you like?");
+                //    await dialogContext.Prompt(PromptStep.CarTypePrompt, $"Available options are: {string.Join(", ", BotConstants.CarTypes)}");
             }
             else
             {
@@ -255,6 +265,7 @@ namespace Build.Labs.BotFramework.Bots
                 await context.SendActivity("What's the location?");
             }
         }
+
 
         private async Task LocationValidator(ITurnContext context, TextResult result)
         {

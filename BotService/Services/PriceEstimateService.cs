@@ -1,5 +1,6 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
+using Build.Labs.BotFramework.Api;
 
 namespace Build.Labs.BotFramework.Services
 {
@@ -12,11 +13,14 @@ namespace Build.Labs.BotFramework.Services
         {
             using (var client = new HttpClient())
             {
+
+                MyWebRequest myRequest = new MyWebRequest("https://localhost:5050/connect/token", "POST", "a=value1&b=value2");
+
                 //var response = await client.GetAsync($"{RideSharingApiUrl}?from=Seattle&to={location}");
                 //response.EnsureSuccessStatusCode();
                 //var price = await response.Content.ReadAsStringAsync();
                 //return price.Replace("\"", "");
-                return "1000";
+                return "Your Product has been added";
             }
         }
     }

@@ -10,6 +10,7 @@ namespace Build.Labs.BotFramework.Models
 
     public class LuisIntents
     {
+        public const string AddCart = "AddCart";
         public const string GetKindOfVehicles = "GetKindOfVehicles";
         public const string GetPriceEstimate = "GetPriceEstimate";
         public const string Greetings = "Greetings";

@@ -3,5 +3,6 @@
   <PropertyGroup>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
     <NameOfLastUsedPublishProfile>build-bot-pso - Web Deploy</NameOfLastUsedPublishProfile>
+    <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>
 </Project>
